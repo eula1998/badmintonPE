@@ -1,0 +1,11 @@
+{
+  "name": "badminton-pe",
+  "version": "1.0.0",
+  "description": "Web app for badminton pe hours registration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eula1998",
+  "license": "ISC"
+}

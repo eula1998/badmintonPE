@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!--To ensure proper rendering and touch zooming for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="index.js"></script>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<title>WPI Badminton Club</title>
+</head>
+
+<body>
+	<div class="container-fluid fill">
+		<div class="row" id="title">
+			<h1 class="text-center">WPI Badminton Club PE Portal</h1>
+		</div>
+
+		<div class="row" id="clock">
+			<div id="clockdisplay" class="text-center"></div>
+		</div>
+
+		<div class="row" id="registration">
+			<div class="col-sm-4" id="signin">
+				<h2 class="text-center">Sign In</h2>
+				<form  class="text-center searchBar" id="signinForm">
+					<input type="text" placeholder="WPI username">
+					<button type="submit">></button>
+				</form>
+				<br/>
+				<div class="scrollbox center-block" id="signinOutput">
+					<span style="color:#999;">
+					ppl who just signed in <br>
+					</span>
+				    <span style="color: #bbb;">
+				    person<br />
+				    person<br />
+				    person<br />
+				    person<br />
+				    person<br />
+				    person<br />
+				    person<br />
+				    </span>
+				</div>
+				<div class="fadedScroller_fade"></div>
+			</div>
+
+			<div class="col-sm-4" id="signout">
+				<h2 class="text-center">Sign Out</h2>
+				<form  class="text-center searchBar" id="signoutForm">
+					<input type="text" placeholder="WPI username">
+					<button type="submit">></button>
+				</form>
+				<br/>
+				<div class="scrollbox center-block" id="signoutOutput">
+					<span style="color:#999;">
+					ppl who just signed out <br>
+					</span>
+				    <span style="color: #bbb;">
+				    person<br />
+				    person<br />
+				    person<br />
+				    person<br />
+				    person<br />
+				    person<br />
+				    person<br />
+				    </span>
+				</div>
+				<div class="fadedScroller_fade"></div>
+			</div>
+
+			<div class="col-sm-4" id="query">
+				<h2 class="text-center">Check Hours</h2>
+				<form  class="text-center searchBar" id="queryForm">
+					<input type="text" placeholder="WPI username">
+					<button type="submit">></button>
+				</form>
+				<button class="center-block" id="clearInput">clear input</button>
+				<br />
+			</div>
+
+		</div>
+
+		<div class="row" id="footnote">
+			<p class="text-center">things</p>
+		</div>
+
+	</div>
+</body>
+</html>
+
