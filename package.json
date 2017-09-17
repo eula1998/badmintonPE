@@ -4,8 +4,13 @@
   "description": "Web app for badminton pe hours registration",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node index.js"
   },
   "author": "eula1998",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eula1998/badmintonPE.git"
+  }
 }

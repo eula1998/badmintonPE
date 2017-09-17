@@ -1,21 +1,20 @@
-(function () {
-    function checkTime(i) {
-        return (i < 10) ? "0" + i : i;
-    }
+// require('./app/index')  
 
-    function startTime() {
-        var today = new Date(),
-            h = checkTime(today.getHours()),
-            m = checkTime(today.getMinutes()),
-            s = checkTime(today.getSeconds());
-        $("#clockdisplay").html(h + ":" + m + ":" + s);
-        t = setTimeout(function () {
-            startTime()
-        }, 500);
-    }
-    startTime();
-})();
+// content of index.js
+const http = require('http')  
+const port = 8080
 
-function signin(){
-    console.log("signed in");
+const requestHandler = (request, response) => {  
+  console.log(request.url)
+  response.end('Hello Node.js Server!')
 }
+
+const server = http.createServer(requestHandler)
+
+server.listen(port, (err) => {  
+  if (err) {
+    return console.log('something bad happened', err)
+  }
+
+  console.log(`server is listening on ${port}`)
+})
